@@ -131,10 +131,18 @@
 					
 				</div> <!-- /landing-text -->			
 				
+				<div id="mySlider" class="royalSlider default">        
+					<!-- Container of slides(images) -->       
+						
 				<div class="span8 landing-screenshot">	
-					
+				
+					<ul class="royalSlidesContainer">
+							<!-- Slides -->
+							<li class="royalSlide">
 						<img src="./img/lovegave2.jpg" class="screengrab" alt="Screenshot" />
-					
+					</li>
+				</ul>
+				</div>
 				</div>
 				
 			</div> <!-- .row -->
@@ -145,7 +153,15 @@
 	
 </div> <!-- /landing --> 
     
-
+<script>
+$(document).ready(function() {
+    $("#mySlider").royalSlider({
+        captionShowEffects:["moveleft", "fade"],
+        directionNavAutoHide: true
+        /* other options go here, view javascript options to learn more */			
+    });  
+});
+</script>
 
  <div id="content">
 				
